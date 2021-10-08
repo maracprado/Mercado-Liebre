@@ -1,0 +1,83 @@
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+label{
+ display:block;
+ margin-bottom: 3%;
+}
+label.labelPrim{
+    font-weight:bold;
+    font-size: 16px;
+}
+
+label.foto{
+    font-weight:bold;
+    font-size: 16px;
+}
+input.foto{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 6px;
+    cursor: pointer; 
+    font-family: 'Inconsolata', monospace;
+
+}
+
+input.date{
+    font-family: 'Inconsolata', monospace;
+}
+
+input {
+    display: block;
+}
+
+input.multiple {
+    display: inline-block;
+    margin-left: 3%;
+}
+
+form.formulario{
+    display: flex;
+    margin:10px;
+    padding: 5%;
+    flex-direction: column;
+    color: #666;
+}
+
+
+form.formulario div{
+    margin: 10px 0px;
+    font-size: 10px;
+    padding: 0px 5%;
+}
+div > input {
+    width: 100%;
+    font-size: 14px;
+    border: 0px;
+    border-radius: 4px;
+    height: 3em;
+
+}
+input::placeholder {
+    color: rgb(117, 117, 117);
+    font-size: 1em;
+    font-family: 'Inconsolata', monospace;
+    padding-left: 3%;
+}
+
+button.enviar{
+    background-color: #1259c3;
+    color:white;
+    font-family: 'Inconsolata', monospace;
+    height: 3em;
+    border-radius: 4px;
+    border-color: #1259c3;
+    margin:5%;
+}
+
+button.enviar:hover{
+    background-color:red;
+}

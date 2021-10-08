@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin:0px;
+    padding:0px
+}
+header.cabecera {
+   background-color: #EAC926;
+}
+
+div.top{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.busqueda{
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img.logo{
+    width:30%;
+    margin-right: 10px;
+    padding: 2%;
+    max-height: 120px;    
+}
+
+div.busqueda > input {
+    width: 95%;
+    color:#666;
+    font-size: 12px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    height: 60%;
+    max-height: 20px;
+}
+
+div.busqueda > i.fa-search {
+    width: 18px;
+    height: 18px;
+    color:#666;
+    margin:1px;
+    padding: 3px 1px;
+    font-size: 70%;
+    background-color: #ebebeb;
+    border: 1px solid #666;
+    text-align: center;
+    border-radius: 2px;
+
+}
+
+nav.navbar{
+    display:none;
+}
+img {
+    width: 100%;
+}
+ul {    
+    list-style-type: none;
+    padding:0;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 5px;
+}
+
+input {
+    background-color: white;
+    font-size: 24px;
+}
+
+.burger-menu{
+    background-color: #1259c3;
+    padding: 10px;
+    display: inline-block;
+}
+.burger-menu-cont{
+    text-align: center;
+}
+
+.fa-hand-holding-usd{
+    margin-right:5px;
+}
+
+p.p-fa-hand-holding-usd{
+    display: flex;
+    margin:20px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+}
+i.fa-truck{
+    padding: 8px;
+    color: #39b54a;
+    border: solid 1px #39b54a ;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top:-15px;
+    transform: rotate(0deg);
+    transition: transform 450ms;
+
+}
+
+article.articulo{
+    box-shadow: 0px;
+    flex-wrap: wrap;
+    transition: box-shadow 450ms;
+}
+
+article.articulo > div{
+    position:relative;
+
+
+}
+div.bajoArticulo h3{
+    display:none;
+}
+
+article {
+    text-align: center;
+    background-color:  white;
+    margin-bottom: 10px;
+    border-top: solid 1px #ebebeb;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+article div {
+    text-align: center;
+}
+
+div.precioDescuento{
+    display:flex;
+    padding:15px 0px;
+    position:relative;
+}
+
+
+h2.titular {
+    font-size: 24px;
+    color: #666;
+    padding-bottom: 10px;
+}
+
+article div {
+    text-align: left;
+    padding: 15px;
+}
+article div p.precio {
+    font-size: 18px;
+    margin:0%;
+    flex-grow: 3;
+    
+}
+article div p.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    margin:0%;
+    flex-grow: 7;
+}
+article div h3.descripcion {
+    font-size: 16px;
+    color: #666;
+}
+
+body  {
+    background-color:  #ebebeb;
+}
+body section article img{
+    padding:5%
+}
+
+body section article div{
+    padding:5%
+}
+
+footer {
+    background-color: white;
+}
+footer * {
+    text-align: center;
+    color: #666;
+    background-color: white;
+}
+footer i.fas {
+    color: #1259c3;
+    font-size: 2em;
+    margin:10px 0px;
+}
+footer section p {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+
+@media (min-width : 361px){
+    div.busqueda{
+        width:30%;
+    }
+    p.p-fa-hand-holding-usd{
+        margin:20px;
+        text-align: center;
+        width: 25%;
+    }
+    nav.navbar{
+        display:flex;
+        margin: 0px 15px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+    }
+    
+    ul.listaIzq{
+        display:flex;
+        justify-content: flex-start;
+        width: 30%;
+        text-align: center;
+    }
+
+    ul.listaIzq > *{
+        width: 50%;
+    }
+
+    ul.listaDer{
+        display:flex;
+        justify-content: flex-end;
+        width: 30%;
+        text-align: center;
+    }
+
+    ul.listaDer > *{
+        width: 50%;
+    }
+
+    .article div h3.descripcion{
+        display:block;        
+    }
+
+    .burger-menu-cont{
+        display: none;
+    }
+
+    div.productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    article.articulo:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+    article.articulo{
+        max-width: 41%;
+
+    }
+
+    
+}
+@media (min-width : 769px){
+    div.productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    article.articulo:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+
+    article.articulo{
+        max-width: 21%;
+    }
+  
+    article.articulo:hover div h3{
+        display:block;
+    }
+    i.fa-truck:hover{
+        transform: rotate(-90deg);
+    }
+}
+
