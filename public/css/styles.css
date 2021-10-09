@@ -121,7 +121,7 @@ article.articulo > div{
 
 }
 div.bajoArticulo h3{
-    display:none;
+    opacity: 0;
 }
 
 article {
@@ -238,10 +238,6 @@ footer section p {
         width: 50%;
     }
 
-    .article div h3.descripcion{
-        display:block;        
-    }
-
     .burger-menu-cont{
         display: none;
     }
@@ -277,7 +273,7 @@ footer section p {
     }
   
     article.articulo:hover div h3{
-        display:block;
+        opacity: 1;
     }
     i.fa-truck:hover{
         transform: rotate(-90deg);
