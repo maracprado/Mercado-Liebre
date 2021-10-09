@@ -282,5 +282,14 @@ footer section p {
     i.fa-truck:hover{
         transform: rotate(-90deg);
     }
+
+    div.footer{
+        display: flex;
+        margin: 10px 0px;
+    }
+
+    .icon-footer:hover{
+        color:#0022AA;
+    }
 }
 

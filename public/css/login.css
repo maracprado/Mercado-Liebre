@@ -79,5 +79,12 @@ button.enviar{
 }
 
 button.enviar:hover{
-    background-color:red;
+    background-color:#0022AA;
+}
+
+.footer{
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px 0px;
 }
