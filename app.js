@@ -27,4 +27,6 @@ app.post ('/login', (req,res) => {
 })
 
 
-app.listen (3030, ()=>{ console.log("Express está corriendo")})
+// app.listen (3030, ()=>{ console.log("Express está corriendo")})
+
+app.listen (process.env.PORT || 3030, ()=>{ console.log("Express está corriendo")})
